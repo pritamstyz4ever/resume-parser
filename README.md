@@ -12,6 +12,7 @@ Uses WordprocessingDocument class to parse .docx files
 Reads headers, linksa, and content inside resume
 Parser is and independent library with uses a configurable keyword dictionary for searching content
 Parser returns a json object with key values for keys configured in dictionary xml and corresponding content.
+Sample resume template is in /Upload folder
 
 # Viewer
 A ASP.NET MVC5 project using razor view to upload resume and display after parsing (pretty basic UI, nothing too fancy)
