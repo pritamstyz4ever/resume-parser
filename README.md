@@ -17,3 +17,8 @@ Parser returns a json object with key values for keys configured in dictionary x
 A ASP.NET MVC5 project using razor view to upload resume and display after parsing (pretty basic UI, nothing too fancy)
 
 Please feel free to fork and make the code more robust and bug free.
+
+# Note
+Parser cannot be 100% accurate as there is no standard template for resume other than use of certain keywords.
+Hence dictionary is maintained to make it configurable and extensible. 
+It can further be exptended to identify specifc skillset from a list of documents.
