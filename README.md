@@ -16,4 +16,4 @@ Parser returns a json object with key values for keys configured in dictionary x
 # Viewer
 A ASP.NET MVC5 project using razor view to upload resume and display after parsing (pretty basic UI, nothing too fancy)
 
-#Please feel free to fork and make the code more robust and bug free.
+Please feel free to fork and make the code more robust and bug free.
