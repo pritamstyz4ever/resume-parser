@@ -1,0 +1,206 @@
+﻿@model DocumentViewer.Models.DocumentViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pritam Paul | Resume Parser </title>
+    <link href="~/Content/style.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+<body>
+    <div class="page-container">
+        <div class="row header">
+            <div>
+                <div>
+                    @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+                        <div>
+                            <input type="file" name="file" />
+                            <input type="submit" class="button" value="OK" />
+                            <span>.docx</span>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="content-panel header-info">
+            </div>
+        </div>
+        <div class="row main-page">
+            <div class="aside-bar">
+                <ul class="quick-go-section">
+                    <li><a href="#careerObjective">Career Objective </a></li>
+                    <li><a href="#experienceSummary">Experience Summary </a></li>
+                    <li><a href="#academics">Academics </a></li>
+                    <li><a href="#achievements">Achievements </a></li>
+                    <li><a href="#programmingSkills">Programming Skills </a></li>
+                    <li><a href="#projectExperience">Project Experience </a></li>
+                    <li><a href="#contacts">Contacts </a></li>
+                </ul>
+            </div>
+            <div class="main-content-panel">
+                <ul class="null">
+                    <li class="brdr">
+                        <div class="side-bar" id="careerObjective">
+                            <h4 class="section-title">Career Objective</h4>
+                        </div>
+                        <div class="content-panel">
+                            <ul>
+                                @foreach (var i in Model.Objective.Where(i => !string.IsNullOrEmpty(i)))
+                                {
+                                    <li>
+                                        @i
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="brdr" id="experienceSummary">
+                        <div class="side-bar">
+                            <h4 class="section-title">Experience Summary</h4>
+                        </div>
+                        <div class="content-panel">
+                            <ul>
+                                @foreach (var i in Model.ExperienceSummary.Where(i => !string.IsNullOrEmpty(i)))
+                                {
+                                    <li>
+                                        @i
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="brdr" id="academics">
+                        <div class="side-bar">
+                            <h4 class="section-title">Academics </h4>
+                        </div>
+                        <div class="content-panel">
+                            <ul>
+                                @foreach (var i in Model.Education.Where(i => !string.IsNullOrEmpty(i)))
+                                {
+                                    <li>
+                                        @i
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="brdr" id="achievements">
+                        <div class="side-bar">
+                            <h4 class="section-title">Achievements </h4>
+                        </div>
+                        <div class="content-panel">
+                            <ul>
+                                @foreach (var i in Model.Achievement.Where(i => !string.IsNullOrEmpty(i)))
+                                {
+                                    <li>
+                                        @i
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="brdr" id="programmingSkills">
+                        <div class="side-bar">
+                            <h4 class="section-title">Programming Skills</h4>
+                        </div>
+                        <div class="content-panel">
+                            <ul>
+                                @foreach (var i in Model.Skill.Where(i => !string.IsNullOrEmpty(i)))
+                                {
+                                    <li>
+                                        @i
+                                    </li>
+                                }
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="brdr" id="projectExperience">
+                        <div class="side-bar">
+                            <h4 class="section-title">Project Experience </h4>
+                        </div>
+                        <div class="content-panel">
+                            <ul>
+                                @foreach (var i in Model.ProjectExperience.Where(i => !string.IsNullOrEmpty(i)))
+                                {
+                                    <li>
+                                        @i
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="brdr" id="contacts">
+                        <div class="side-bar">
+                            <h4 class="section-title">Online Presence </h4>
+                        </div>
+                        <div class="content-panel">
+                            <ul>
+                                @foreach (var i in Model.Handle.Where(i => !string.IsNullOrEmpty(i)))
+                                {
+                                    <li>
+                                        @i
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <a href="#nogo" class="scroll-top">&uarr; Top  </a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Show or hide the sticky footer button
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('.scroll-top').fadeIn(200);
+                    $('.quick-go-section').addClass('fixed-menu');
+                } else {
+                    $('.scroll-top').fadeOut(200);
+                    $('.quick-go-section').removeClass('fixed-menu');
+                }
+            });
+
+            // Animate the scroll to top
+            $('.scroll-top').click(function (event) {
+                event.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, 300);
+            });
+
+            //Initiate the quick go menu
+            $('a.quick-go').click(function () {
+                $(this).addClass('active');
+                $('.quick-go-section').fadeIn();
+            });
+
+            $('.quick-go-section a').click(function () {
+                //$('.quick-go-section').hide();
+                $('a.quick-go').removeClass('active');
+            });
+
+        });
+    </script>
+</body>
+</html>

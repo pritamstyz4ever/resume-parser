@@ -1,0 +1,10 @@
+c:\users\pritam.paul\documents\visual studio 2012\Projects\DocumentParser\DocumentParser\bin\Debug\DocumentParser.exe.config
+c:\users\pritam.paul\documents\visual studio 2012\Projects\DocumentParser\DocumentParser\bin\Debug\DocumentParser.exe
+c:\users\pritam.paul\documents\visual studio 2012\Projects\DocumentParser\DocumentParser\bin\Debug\DocumentParser.pdb
+c:\users\pritam.paul\documents\visual studio 2012\Projects\DocumentParser\DocumentParser\bin\Debug\DocumentFormat.OpenXml.dll
+c:\users\pritam.paul\documents\visual studio 2012\Projects\DocumentParser\DocumentParser\obj\Debug\DocumentParser.exe
+c:\users\pritam.paul\documents\visual studio 2012\Projects\DocumentParser\DocumentParser\obj\Debug\DocumentParser.pdb
+c:\users\pritam.paul\documents\visual studio 2012\Projects\DocumentParser\DocumentParser\bin\Debug\Newtonsoft.Json.dll
+c:\users\pritam.paul\documents\visual studio 2012\Projects\DocumentParser\DocumentParser\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Pritam.Paul\documents\visual studio 2012\Projects\DocumentParser\DocumentParser\obj\Debug\DocumentParser.csprojResolveAssemblyReference.cache
+C:\Users\Pritam.Paul\documents\visual studio 2012\Projects\DocumentParser\DocumentParser\bin\Debug\resources\KeywordDictionary.xml

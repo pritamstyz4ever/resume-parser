@@ -1,0 +1,57 @@
+﻿<Dictionary>
+  <Objective>
+    <Word>objective</Word>
+    <Word>personal statement</Word>
+    <Word>career objective</Word>
+  </Objective>
+  <ExperienceSummary>
+    <Word>experience summary</Word>
+    <Word>experience details</Word>
+  </ExperienceSummary>
+  <ProjectExperience>
+    <Word>project</Word>
+  </ProjectExperience>
+  <Certification>
+    <Word>certifications</Word>
+    <Word>certification</Word>
+  </Certification>
+  <Education>
+    <Word>education</Word>
+    <Word>academic</Word>
+  </Education>
+  <Achievement>
+    <Word>achievements</Word>
+    <Word>awards</Word>
+  </Achievement>
+  <Handle>
+    <Word>linkedin</Word>
+    <Word>facebook</Word>
+    <Word>gmail</Word>
+    <Word>hotmail</Word>
+    <Word>yahoo</Word>
+    <Word>icloud</Word>
+    <Word>outlook</Word>
+    <Word>twitter</Word>
+    <Word>github</Word>
+  </Handle>
+  <Skill>
+    <Word>technical skills</Word>
+    <Word>programming</Word>
+  </Skill>
+  <Personal>
+    <Word>personal information</Word>
+  </Personal>
+  <Declaration>
+    <Word>declaration</Word>
+    <Word>statement</Word>
+  </Declaration>
+</Dictionary>
+
+
+
+
+
+
+
+
+

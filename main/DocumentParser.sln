@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentParser", "DocumentParser\DocumentParser.csproj", "{36F87518-2EB9-490E-B814-EE3923BE7D9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentViewer", "DocumentViewer\DocumentViewer.csproj", "{4F90765A-1A8D-4ABC-BC66-81ACDFCA945B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36F87518-2EB9-490E-B814-EE3923BE7D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F87518-2EB9-490E-B814-EE3923BE7D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F87518-2EB9-490E-B814-EE3923BE7D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F87518-2EB9-490E-B814-EE3923BE7D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F90765A-1A8D-4ABC-BC66-81ACDFCA945B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F90765A-1A8D-4ABC-BC66-81ACDFCA945B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F90765A-1A8D-4ABC-BC66-81ACDFCA945B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F90765A-1A8D-4ABC-BC66-81ACDFCA945B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
